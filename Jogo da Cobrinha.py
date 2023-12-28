@@ -143,8 +143,10 @@ while True:
         x_cobra = 0
     if x_cobra < 0:
         x_cobra = largura 
+    if y_cobra > altura:
         y_cobra = 0
-
+    if y_cobra < 0:
+        y_cobra = altura
 
     if len(lista_cobra) > comprimento_inicial:
         del lista_cobra[0]
